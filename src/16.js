@@ -7,10 +7,16 @@
 // В противном случае функция должна вернуть новый массив целиком.
 function makeArray(firstArray, secondArray, maxLength) {
   // Change code below this line
-  let newArray;
-  newArray = firstArray.concat(secondArray);
-  return newArray.Length > maxLength ? newArray.slice(0, maxLength) : newArray;
+
+  const newArray = firstArray.concat(secondArray);
+  const Array = newArray.slice(0, maxLength);
+
+  return Array;
   // Change code above this line
 }
-console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4));
-console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 2));
+console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 2));
+
+//   if (password === ADMIN_PASSWORD) {
+//     return 'Welcome!';
+//   }
+//   return 'Access denied, wrong password!';
